@@ -2,7 +2,7 @@
 # Pentatool
 Python script for tracking unprotected minecraft servers
 
-#TODO
+#TODO  
  Cmd-based menu  
  Change hard-locked paths  
  Better config system  
