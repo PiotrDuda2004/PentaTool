@@ -16,6 +16,8 @@ PAGE_SIZE = 100
 
 # user config loaded from config.json
 CONFIG = {}
+with open('MoreTrueOutput.txt', 'a') as the_file:
+    the_file.truncate(0)
 
 def do_request(page_num):
     # construct API request
@@ -57,8 +59,6 @@ def parse_page(page_json):
     return result
 
 if __name__ == "__main__":
-
-
     try:
         with open("config.json") as f:
             CONFIG = json.loads(f.read())
@@ -95,9 +95,8 @@ if __name__ == "__main__":
             with open(CONFIG["OUTPUT_FILE"], "w") as f:
                 for ip in server_results:
                     f.write(ip + "\n")
-
-            PutItUp.GetItOn()
-            os.system('cd C:/Users/piotr/Desktop/go-serversdat-master & go run main.go -u -d "C:/Users/piotr/Appdata/Roaming/Crystal-Launcher/instances/Vanilla_"'+CONFIG["MC_VERSION"]+'"/.minecraft/servers.dat" ')
+            os.system("checkWhitelist.py 1")
+            os.system('cd go-serversdat-master & go run main.go -u -d "C:/Users/piotr/Appdata/Roaming/Crystal-Launcher/instances/Vanilla_"'+CONFIG["MC_VERSION"]+'"/.minecraft/servers.dat" ')
         except Exception as e:
             print("Failed to open output file!")
             print(e)

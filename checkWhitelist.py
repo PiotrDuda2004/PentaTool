@@ -5,6 +5,7 @@ import re
 import os
 import json
 
+
 try:
     with open("config.json") as f:
         CONFIG = json.loads(f.read())
