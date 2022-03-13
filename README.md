@@ -1,16 +1,42 @@
+# PentaTool
 
-# Pentatool
-Python script for tracking unprotected minecraft servers
+PentaTool is a Python program for searching unprotected minecraft servers.
 
-#TODO  
- Cmd-based menu  
- Change hard-locked paths  
- Better config system  
- Progress bar  
- --onefile, .exe  
- dist version  
- Speed/quality ratio of search in config.json  ✓
- Simple database for found servers ratio to most common found servers ratio  
- Optimization / using more cloud libraries  
- Some estimated time qualite test  ✓ 96% accuracy  
- Saving logs of found servers with time and date  
+## Installation
+```
+Install Python3  (https://www.python.org/)
+Install NodeJS (https://nodejs.org/es/)
+Install GOlang (https://go.dev/dl/)
+```
+
+```bash
+# Clone the repository (Or download it from the web in the "Code button and download zip")
+$ git clone https://github.com/PiotrDuda2004/PentaTool
+
+# Go into the MCPTool folder
+$ cd PentaTool
+
+# Create an Shodan (https://www.shodan.io/)
+# And receive your Shodan API key
+
+# Install the requirements
+$ python3 -m pip install -r requirements.txt
+$ npm install mineflayer
+$ npm install process
+
+```
+# The Most Important
+```bash
+# Fill your config.json file!
+```
+
+
+```
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
