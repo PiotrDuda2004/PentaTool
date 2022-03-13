@@ -3,5 +3,6 @@
   "PAGES": 1,
   "MC_VERSION": "1.17.1",
   "ACTIVE_ONLY": false,
-  "OUTPUT_FILE": "output.txt"
+  "OUTPUT_FILE": "output.txt",
+  "SEARCH_TIME": 5
 }

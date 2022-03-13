@@ -2,10 +2,7 @@
 
 import requests
 import json
-import PutItUp
 import os
-import subprocess
-import re
 
 # Shodan search query endpoint
 API_URL = "https://api.shodan.io/shodan/host/search"

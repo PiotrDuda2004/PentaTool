@@ -14,6 +14,9 @@ except Exception as e:
     print(e)
     exit()
 
+
+#Change to user-input variable 
+
 mineflayer = require('mineflayer')
 
 random_number = id([]) % 1000 # Give us a random number upto 1000
@@ -32,18 +35,18 @@ def createBot(host,port):
         blackie.write(("Server	")+host+":"+str(port)+'\n')
         blackie.close()
 
-
+lengthie = sum(1 for line in open('Output.txt'))
 if __name__ == '__main__':
     with open("Output.txt","r") as file:
         for line in file:
+            lengthie-=1
             line = re.split('[:]',line)
             host = line[0]
             port = int(line[1])
-            print("Checking "+host+":"+str(port))
-
+            print("Checking "+host+":"+str(port)+("Estimated time: "+str(lengthie*CONFIG["SEARCH_TIME"]))+"s ")  
             p = multiprocessing.Process(target=createBot, args=(host,str(port)))
             p.start()
             time.sleep(5)
             p.terminate()
             p.join()
-            
+    print("Found "+sum(1 for line in open('myfile.txt'))+ "Servers")
