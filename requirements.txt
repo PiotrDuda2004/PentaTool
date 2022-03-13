@@ -1,0 +1,4 @@
+colorama==0.4.4
+console_progressbar==1.1.2
+javascript==1!0.2.16
+requests==2.26.0
