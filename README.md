@@ -9,3 +9,4 @@ Python script for tracking unprotected minecraft servers
  Progress bar  
  --onefile, .exe  
  dist version  
+ Speed/quality ratio of search in config.json  
