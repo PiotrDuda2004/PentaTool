@@ -38,20 +38,20 @@ menu = rf"""
 {lwhite}                  /  /P'      d$$$$P. |\
 {green}                 /   "      .d$$$P' |\^"l    
 {lblack}               .'           `T$P^""\"""  :
-{green}            ._.'      _.'                ;                            {lyellow} Discord: Bloody#3521 {Back.BLACK} 
-{lblack}         `-.-".-'-' ._.       _.-"    .-"                           {lyellow} Github: PiotrDuda2004
+{green}            ._.'      _.'                ;                            {lyellow} Discord: {lwhite} Bloody#3521 {Back.BLACK} 
+{lblack}         `-.-".-'-' ._.       _.-"    .-"                           {lyellow} Github:  {lwhite}@PiotrDuda2004
 {lyellow}      `.-\" _____  ._              .-"
 {lwhite}      -(.g$$$$$$$b.              .'
-{green}       ""^^T$$$P^)            .(:
-{lblack}         _/  -"  /.'         /:/;
-{green}      ._.'-'`-'  ")/         /;/;
-{lblack}   `-.-"..--""   " /         /  ;
-{lyellow}  .-" ..--""        -'          :
-{lwhite}  ..--""--.-"         (\      .-(\
-{green}    ..--""              `-\(\/;`
-{lblack}      _.                      :
-{green}                              ;`-
-{lblack}                            :\
+{green}       ""^^T$$$P^)            .(:            {lgreen}     ╔══════════════════════════════════╗                      
+{lblack}         _/  -"  /.'         /:/;           {lgreen}      ║ {lwhite} ► Commands: {lgreen}                    ║
+{green}      ._.'-'`-'  ")/         /;/;            {lgreen}     ║                                  ║
+{lblack}   `-.-"..--""   " /         /  ;           {lgreen}      ║ {lblack} • start {lgreen}                        ║
+{lyellow}  .-" ..--""        -'          :          {lgreen}       ║ {lblack} • showconfig  {lgreen}                  ║
+{lwhite}  ..--""--.-"         (\      .-(\          {lgreen}      ║ {lblack} • editconfig  {lgreen}                  ║
+{green}    ..--""              `-\(\/;`             {lgreen}     ║  {lblack}• cls    {lgreen}                       ║
+{lblack}      _.                      :             {lgreen}      ║                                  ║
+{green}                              ;`-            {lgreen}     ║                                  ║
+{lblack}                            :\              {lgreen}      ╚══════════════════════════════════╝
 {lyellow}                           ; 
 """  
 
