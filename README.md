@@ -1,7 +1,7 @@
 # PentaTool
 
 PentaTool is a Python program for searching unprotected minecraft servers.
-![Zrzut ekranu 2022-03-13 095951](https://user-images.githubusercontent.com/61467985/158052482-673daba8-98c9-4e85-8fa0-390b9cd3d6c5.png)
+![Zrzut ekranu 2022-03-13 105251](https://user-images.githubusercontent.com/61467985/158054220-ffeb0ede-af2f-4716-97fd-6dfaf601d7e9.png)
 ## Installation
 ```
 Install Python3  (https://www.python.org/)
