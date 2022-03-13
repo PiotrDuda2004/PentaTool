@@ -64,7 +64,7 @@ if __name__ == '__main__':
             port = int(line[1])
             minutes, seconds = divmod(lengthie*CONFIG["SEARCH_TIME"], 60)
             print ("\033[A                                             \033[A")
-            print(f"{white}[{green}Start{white}]   {green}Checking "+host+":"+str(port)+(f" | Estimated time: {white}"+str(minutes)+f"{green} minutes {white}")+str(seconds+(CONFIG["SEARCH_TIME"])*2)+f"{green} seconds {white}||{green}"+f"Found {yellow}"+str(sum(1 for line in open('MoreTrueOutput.txt')))+ f"{green} Servers")  #Generating message                                  
+            print(f"{white}[{green}Start{white}]   {green}Checking "+host+":"+str(port)+(f" | Estimated time: {white}"+str(minutes)+f"{green} minutes {white}")+str(seconds+(CONFIG["SEARCH_TIME"])*2)+f"{green} seconds {white}|| {green}"+f"Found {yellow}"+str(sum(1 for line in open('MoreTrueOutput.txt')))+ f"{green} Servers")  #Generating message                                  
             #print("Found "+str(sum(1 for line in open('MoreTrueOutput.txt')))+ " Servers")
     
             pb.print_progress_bar(sum(1 for line in open('Output.txt'))-lengthie)

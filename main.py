@@ -112,7 +112,7 @@ if __name__ == "__main__":
                 for ip in server_results:
                     f.write(ip + "\n")
             os.system("checkWhitelist.py 1")
-            os.system('cd go-serversdat-master & go run main.go -u -d '+CONFIG["MC_PATH"]+'"Vanilla_"'+CONFIG["MC_VERSION"]+'"/.minecraft/servers.dat"')
+            os.system('cd go-serversdat-master & go run main.go -u -d "C:/Users/piotr/Appdata/Roaming/Crystal-Launcher/instances/Vanilla_"'+CONFIG["MC_VERSION"]+'"/.minecraft/servers.dat"')
         except Exception as e:
             print("Failed to open output file!")
             print(e)
