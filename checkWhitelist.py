@@ -43,7 +43,9 @@ if __name__ == '__main__':
             line = re.split('[:]',line)
             host = line[0]
             port = int(line[1])
-            print("Checking "+host+":"+str(port)+("Estimated time: "+str(lengthie*CONFIG["SEARCH_TIME"]))+"s ")  
+            estTime = lengthie*CONFIG["SEARCH_TIME"]
+            minutes, seconds = divmod(estTime, 60)
+            print("Checking "+host+":"+str(port)+(" | Estimated time: "+str(minutes)+" minutes ")+str(seconds)+" seconds ")  
             p = multiprocessing.Process(target=createBot, args=(host,str(port)))
             p.start()
             time.sleep(5)
