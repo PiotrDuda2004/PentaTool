@@ -4,5 +4,6 @@
   "MC_VERSION": "1.17.1",
   "ACTIVE_ONLY": false,
   "OUTPUT_FILE": "output.txt",
-  "SEARCH_TIME": 5
+  "SEARCH_TIME": 3,
+  "MC_PATH": "C:/Users/piotr/Appdata/Roaming/Crystal-Launcher/instances/"
 }

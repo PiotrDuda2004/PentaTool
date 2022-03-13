@@ -1,8 +1,27 @@
 
-
+from colorama import Fore, init
 import requests
 import json
 import os
+
+red = Fore.RED
+lred = Fore.LIGHTRED_EX
+black = Fore.BLACK
+lblack = Fore.LIGHTBLACK_EX
+white = Fore.WHITE
+lwhite = Fore.LIGHTWHITE_EX
+lcyan = Fore.LIGHTCYAN_EX
+magenta = Fore.MAGENTA
+lmagenta = Fore.LIGHTMAGENTA_EX
+yellow = Fore.YELLOW
+lyellow = Fore.LIGHTYELLOW_EX
+blue = Fore.BLUE
+lblue = Fore.LIGHTBLUE_EX
+reset = Fore.RESET
+green = Fore.GREEN
+lgreen = Fore.LIGHTGREEN_EX
+cyan = Fore.CYAN
+
 
 # Shodan search query endpoint
 API_URL = "https://api.shodan.io/shodan/host/search"
@@ -74,7 +93,7 @@ if __name__ == "__main__":
         print("PAGES must be greater than 0.")
         exit()
 
-    print("Searching for servers...")
+    print(f"{reset}{green}Searching for servers...")
     server_results = []
     for i in range(CONFIG["PAGES"]):
         resp = do_request(i + 1)
@@ -93,7 +112,7 @@ if __name__ == "__main__":
                 for ip in server_results:
                     f.write(ip + "\n")
             os.system("checkWhitelist.py 1")
-            os.system('cd go-serversdat-master & go run main.go -u -d "C:/Users/piotr/Appdata/Roaming/Crystal-Launcher/instances/Vanilla_"'+CONFIG["MC_VERSION"]+'"/.minecraft/servers.dat" ')
+            os.system('cd go-serversdat-master & go run main.go -u -d '+CONFIG["MC_PATH"]+'"Vanilla_"'+CONFIG["MC_VERSION"]+'"/.minecraft/servers.dat"')
         except Exception as e:
             print("Failed to open output file!")
             print(e)

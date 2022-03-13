@@ -9,6 +9,8 @@ Python script for tracking unprotected minecraft servers
  Progress bar  
  --onefile, .exe  
  dist version  
- Speed/quality ratio of search in config.json  
+ Speed/quality ratio of search in config.json  ✓
  Simple database for found servers ratio to most common found servers ratio  
-Optimization / using more cloud libraries  
+ Optimization / using more cloud libraries  
+ Some estimated time qualite test  ✓ 96% accuracy
+ Saving logs of found servers with time and date

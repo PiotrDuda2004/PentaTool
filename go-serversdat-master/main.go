@@ -18,8 +18,8 @@ type Server struct {
 }
 
 func main() {
-	serverDat := flag.String("serverDat", "C:/Users/piotr/Appdata/Roaming/Crystal-Launcher/instances/Vanilla_1.18.1/.minecraft/servers.dat", "Path to your Minecraft servers.dat")
-	listPtr := flag.String("servers", "C:/PentaTool/MoreTrueOutput.txt", "Path to the servers list")
+	serverDat := flag.String("serverDat", "instances/Vanilla_1.18.1/.minecraft/servers.dat", "Path to your Minecraft servers.dat")
+	listPtr := flag.String("servers", "PentaTool/MoreTrueOutput.txt", "Path to the servers list")
 	export := flag.Bool("export", true, "Exports the current values to a normalized format")
 	list := flag.Bool("list", false, "List all servers in table format")
 	update := flag.Bool("update", false, "Updates servers.dat file from server list provided in -s")
