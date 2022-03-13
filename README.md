@@ -10,3 +10,4 @@ Python script for tracking unprotected minecraft servers
  --onefile, .exe  
  dist version  
  Speed/quality ratio of search in config.json  
+ Simple database for found servers ratio to most common found servers ratio  
