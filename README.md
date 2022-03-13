@@ -1,6 +1,6 @@
 # PentaTool
 
-PentaTool is a Python program for searching public minecraft servers and checking with bot for whitelist.
+PentaTool is a Python program for searching public minecraft servers and checking with bot for whitelist.  
 If there is no any, all whitelist-free servers will be automatically added to your minecrfat servers list!  
 ![Zrzut ekranu 2022-03-13 105251](https://user-images.githubusercontent.com/61467985/158054220-ffeb0ede-af2f-4716-97fd-6dfaf601d7e9.png)
 ## Installation
